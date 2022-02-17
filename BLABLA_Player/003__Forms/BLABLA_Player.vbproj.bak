@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B061DF19-BC90-4511-8D81-397700618600}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>BLABLA_Player</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BLABLA_Player.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BLABLA_Player.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Excel.4, Version=4.1.20141.316, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.C1Excel.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Flash.4, Version=4.0.20141.88, Culture=neutral, PublicKeyToken=45fc79e7d82d90d7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.C1Flash.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Pdf.4, Version=4.1.20141.262, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.C1Pdf.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Report.4, Version=4.6.20141.54721, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.C1Report.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Report.CustomFields.4, Version=4.6.20141.54721, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.C1Report.CustomFields.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Zip.4, Version=4.1.20141.107, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.C1Zip.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.2, Version=2.0.20152.67, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1BarCode.4, Version=4.0.20141.69, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1BarCode.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Chart.4, Version=4.0.20141.24092, Culture=neutral, PublicKeyToken=a22e16972c085838, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Chart.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Chart3D.4, Version=4.0.20141.24092, Culture=neutral, PublicKeyToken=a22e16972c085838, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Chart3D.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20141.19619, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Command.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1DynamicHelp.4, Version=4.0.20141.67, Culture=neutral, PublicKeyToken=f95c5890a3995862, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1DynamicHelp.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Editor.4, Version=4.0.20141.210, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Editor.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4, Version=4.6.20141.828, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1FlexGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic.4, Version=4.6.20141.828, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1FlexGrid.Classic.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1GanttView.4, Version=4.0.20141.193, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1GanttView.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Gauge.4, Version=4.0.20141.98, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Gauge.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4, Version=4.0.20141.33356, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Input.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1InputPanel.4, Version=4.0.20141.179, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1InputPanel.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1List.4, Version=4.1.20141.251, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1List.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Report.4, Version=4.6.20141.54721, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Report.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1ReportDesigner.4, Version=4.6.20141.54721, Culture=neutral, PublicKeyToken=fb528571dbff5bd2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1ReportDesigner.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20141.570, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Ribbon.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Schedule.4, Version=4.0.20141.288, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Schedule.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Sizer.4, Version=4.1.20141.81, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Sizer.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1SpellChecker.4, Version=4.0.20141.139, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1SpellChecker.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1SplitContainer.4, Version=4.0.20141.55, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1SplitContainer.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1SuperTooltip.4, Version=4.0.20141.137, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1SuperTooltip.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.4, Version=4.0.20141.61348, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1TrueDBGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Win7Pack.4, Version=4.0.20141.38, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Win7Pack.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_MAIN.vb" />
+    <Compile Include="_video_CONTROLS.Designer.vb">
+      <DependentUpon>_video_CONTROLS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="_video_CONTROLS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_video_WINDOW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_video_WINDOW.Designer.vb">
+      <DependentUpon>_video_WINDOW.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_video_CONTROLS.resx">
+      <DependentUpon>_video_CONTROLS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_video_WINDOW.resx">
+      <DependentUpon>_video_WINDOW.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blabla_Orizaba.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
